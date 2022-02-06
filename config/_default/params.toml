@@ -7,7 +7,7 @@ mainSections = ["posts", "docs"] # Default to ["posts"].
 # metaRobots = "noindex, nofollow" # Default value for Meta Tag "robots"
 # metaRobots = "" # disable Meta Tag "robots"
 
-logo = "images/profile.webp"
+logo = false
 brand = "Maoguang"
 
 palette = "blue" # Default palette. Optional. You'll need to clear the browser cache after modifying this.
