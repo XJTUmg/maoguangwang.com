@@ -1,0 +1,13 @@
+name = "Maoguang Wang"
+avatar = "images/profile.webp"
+bio = "Googler, Full Stack Engineer"
+company = "<a href='https://google.com' target='_blank' rel='noopener noreferrer'>Google</a>"
+location = "<a href='https://www.google.com/maps/search/munich' target='_blank' rel='noopener noreferrer'>Munich</a>"
+# about = "https://domain.tld" # The external about page. The internal about page will be used if not set.
+
+[params]
+  #layout = "compact"
+
+[social]
+  email = "xjtumg1007@gmail.com"
+  github = "XJTUmg"
