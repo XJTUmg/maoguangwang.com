@@ -8,9 +8,11 @@
     placeholder: ' {{ i18n "comment-placeholder" }} ', 
     sofa: '',
   }
+  const path = window.location.pathname
   new Waline({
     el: '#waline-module', 
     serverURL: "{{ $params.walineServerURL }}", 
+    path: path.replace('zh-cn/', ''),
     lang: "{{ $.Language.Lang }}",
     visitor: true, 
     dark: "[data-mode='dark']",
