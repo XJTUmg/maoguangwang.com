@@ -1,0 +1,21 @@
+<script src="//cdn.jsdelivr.net/npm/@waline/client"></script>
+{{- $params := .Site.Params.comment -}}
+{{- with $params -}}
+<div id="waline-module"></div>
+<script>
+  const locale = {
+    nick: ' {{ i18n "nickname" }} ',
+    placeholder: ' {{ i18n "comment-placeholder" }} ', 
+    sofa: '',
+  }
+  new Waline({
+    el: '#waline-module', 
+    serverURL: "{{ $params.walineServerURL }}", 
+    lang: "{{ $.Language.Lang }}",
+    visitor: true, 
+    dark: "[data-mode='dark']",
+    requiredMeta: [], 
+    locale,
+});
+</script>
+{{- end -}}

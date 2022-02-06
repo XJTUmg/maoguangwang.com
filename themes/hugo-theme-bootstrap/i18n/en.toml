@@ -67,8 +67,8 @@ other = "Teal"
 [color_yellow]
 other = "Yellow"
 
-[comments]
-other = "Comments"
+[comment-placeholder]
+other = "comment"
 
 [contact_name]
 other = "Name"
@@ -114,6 +114,9 @@ other = "Load More"
 
 [mode]
 other = "Mode"
+
+[nickname]
+other = "Nickname"
 
 [offline_title]
 other = "Oops! You're offline."

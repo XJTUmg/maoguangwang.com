@@ -1,13 +1,18 @@
 {{- if and (default true .Site.Params.comment) (default true .Params.comment) -}}
 {{- partial "hooks/comments-begin" . -}}
 <div class="card component row post-comments" id="post-comments">
-  <div class="card-header">
-    <h2 class="card-title">{{ i18n "comments" }}</h2>
-  </div>
   <div class="card-body">
+    {{- if eq .Site.Params.comment.module "waline" -}}
+      {{- partial "post/comments/waline.html" . -}}
+    {{- end -}}
+
+    {{- if eq .Site.Params.comment.module "utterances" -}}
+    {{- partial "post/comments/utterances.html" . -}}
+    {{- end -}}
+
+    {{- if and (not (eq .Site.Params.comment.module "Waline")) (not (eq .Site.Params.comment.module "utterances")) -}}
     {{- partial "post/comments/disqus.html" . -}}
-    {{- partial "post/comments/utterances" . -}}
-    {{- partial "post/comments/custom" . -}}
+    {{- end -}}
   </div>
 </div>
 {{- partial "hooks/comments-end" . -}}

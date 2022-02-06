@@ -67,8 +67,8 @@ other = "蓝绿色"
 [color_yellow]
 other = "黄色"
 
-[comments]
-other = "评论"
+[comment-placeholder]
+other = "来发评论吧~"
 
 [contact_name]
 other = "名称"
@@ -111,6 +111,9 @@ other = "加载更多"
 
 [mode]
 other = "模式"
+
+[nickname]
+other = "昵称"
 
 [offline_title]
 other = "哎哟！你离线了。"
