@@ -3,7 +3,7 @@ title = "Maoguang's blog"
 theme = "hugo-theme-bootstrap"
 
 # Multilingual mode
-defaultContentLanguage = "en"
+defaultContentLanguage = "zh-cn"
 
 # Pagination
 paginate = 10

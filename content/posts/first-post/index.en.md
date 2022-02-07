@@ -6,7 +6,7 @@ tags = [
   "Hugo",
 ]
 categories = [
-  "技术",
+  "Tech",
 ]
 +++
 

@@ -12,7 +12,7 @@
   new Waline({
     el: '#waline-module', 
     serverURL: "{{ $params.walineServerURL }}", 
-    path: path.replace('zh-cn/', ''),
+    path: path.replace('/en/', '/'),
     lang: "{{ $.Language.Lang }}",
     visitor: true, 
     dark: "[data-mode='dark']",
